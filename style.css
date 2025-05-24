@@ -30,7 +30,7 @@ button {
 }
 
 .title {
-  color: rgb(32, 32, 39);
+  color: #202027;
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
@@ -38,7 +38,7 @@ button {
 }
 
 .description {
-  color: rgb(32, 32, 39);
+  color: #202027;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -50,21 +50,20 @@ button {
   margin-top: 48px;
   font: inherit;
   box-sizing: border-box;
-  border: 1px solid rgb(32, 32, 39);
+  border: 1px solid #202027;
   border-radius: 60px;
-  background: rgb(32, 32, 39);
+  background: #202027;
   width: 247px;
   height: 66px;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
   text-align: center;
 }
-
 .intro-btn:hover {
-  background: white;
-  color: #000;
+  background: #FFFFFF;
+  color: #202027;
 }
 
 .lane {
@@ -82,15 +81,12 @@ button {
   padding-top: 94px;
   padding-left: 120px;
 }
-
 .about__title {
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
 }
-
 .about__description {
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
 }
-
 .about-game {
   display: flex;
   flex-wrap: wrap;
@@ -102,35 +98,30 @@ button {
 }
 
 .card__link {
-  background-color: white;
+  background-color: #FFFFFF;
 }
-
 .card__img {
-  background-color: white;
+  background-color: #FFFFFF;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   width: 378px;
 }
-
 .card__info {
   height: 159px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background-color: white;
+  background-color: #FFFFFF;
   padding-left: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .card__info_middle {
   height: 198px;
 }
-
 .card__info_big {
   height: 237px;
 }
-
 .card__number {
   width: 108px;
   height: 36px;
@@ -142,7 +133,6 @@ button {
   text-align: center;
   padding-top: 10px;
 }
-
 .card__name {
   color: #202027;
   font-size: 32px;
@@ -150,7 +140,6 @@ button {
   line-height: 39px;
   padding-top: 16px;
 }
-
 .card-lower {
   display: flex;
   gap: 32px;
@@ -163,9 +152,8 @@ button {
   padding-left: 120px;
   padding-bottom: 144px;
 }
-
 .page-3__title {
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
@@ -179,72 +167,63 @@ button {
   flex-direction: column;
   row-gap: 32px;
 }
-
 .mini-card {
   display: flex;
   flex-direction: row;
 }
-
 .mini-card__info {
   width: 600px;
   height: 500px;
-  background-color: white;
+  background-color: #FFFFFF;
   padding-left: 48px;
   padding-top: 48px;
-  background-color: white;
+  background-color: #FFFFFF;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
 }
-
 .mini-card__info_reverce {
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-
 .mini-card__name {
-  color: rgb(32, 32, 39);
+  color: #202027;
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
   text-align: left;
   padding-bottom: 24px;
 }
-
 .mini-card__description {
-  color: rgb(32, 32, 39);
+  color: #202027;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   text-align: left;
   padding-bottom: 36px;
 }
-
 .mini-card__btn {
   width: 247px;
   height: 66px;
   border-radius: 60px;
-  background: rgb(32, 32, 39);
+  background: #202027;
   font: inherit;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
   text-align: center;
 }
-
 .mini-card__btn:hover {
-  background: white;
-  color: #000;
+  background: #FFFFFF;
+  color: #202027;
 }
-
 .mini-card__img {
-  background-color: white;
+  background-color: #FFFFFF;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-
 .mini-card__img_reverce {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
@@ -256,9 +235,8 @@ button {
   height: 150px;
   background: #BDED35;
 }
-
 .footer__title {
-  color: rgb(0, 0, 0);
+  color: #000;
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
