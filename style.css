@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -18,15 +17,19 @@ button {
   transition: all 0.5s;
 }
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .page-1 {
-  height: 710px;
   background: url(img/star-1.svg) top 94px left 63px no-repeat, url(img/star-2.svg) top 69px left 156px no-repeat, url(img/star-3.svg) top 538px left 948px no-repeat, url(img/star-4.svg) top 568px left 1013px no-repeat, url(img/star-big.svg) top -335px left 929px no-repeat;
   background-color: #E1FF8F;
 }
 
 .intro {
   padding-top: 196px;
-  padding-left: 120px;
+  padding-bottom: 156px;
 }
 
 .title {
@@ -72,14 +75,12 @@ button {
 }
 
 .page-2 {
-  height: 1470px;
   background: url(img/star-about-big.svg) top 77px left 1050px no-repeat, url(img/star-about-1.svg) top 770px left 29px no-repeat, url(img/star-about-2.svg) top 822px left 40px no-repeat;
   background-color: #202027;
 }
 
 .about {
   padding-top: 94px;
-  padding-left: 120px;
 }
 .about__title {
   color: #FFFFFF;
@@ -94,7 +95,6 @@ button {
   margin-top: 72px;
   -moz-column-gap: 32px;
        column-gap: 32px;
-  padding-left: 120px;
 }
 
 .card__link {
@@ -147,9 +147,8 @@ button {
 }
 
 .page-3 {
-  background: url(img/star-min-1.svg) top 93px left 1327px no-repeat, url(img/star-min-2.svg) top 126px left 1370px no-repeat, url(img/star-min-3.svg) top 3666px left 1369px no-repeat, url(img/star-min-4.svg) top 3714px left 1299px no-repeat;
+  background: url(img/star-min-1.svg) top 93px left 1327px no-repeat, url(img/star-min-2.svg) top 126px left 1370px no-repeat, url(img/star-min-3.svg) top 3366px left 1369px no-repeat, url(img/star-min-4.svg) top 3414px left 1299px no-repeat;
   background-color: #202027;
-  padding-left: 120px;
   padding-bottom: 144px;
 }
 .page-3__title {
@@ -242,4 +241,31 @@ button {
   line-height: 29px;
   text-align: center;
   padding-top: 61px;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+  .intro {
+    padding-top: 147px;
+    width: 262px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */

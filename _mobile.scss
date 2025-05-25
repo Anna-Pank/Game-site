@@ -1,0 +1,32 @@
+@media (max-width: 768px)   {
+    .center    {
+        padding-left: 57px;
+        padding-right: 57px;
+    }
+    .intro    {
+        padding-top: 147px;
+        width: 262px;
+    }
+    .title  {
+        font-size: 40px;
+        line-height: 49px;
+        text-align: center;
+    }
+    .description   {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .intro-btn  {
+        width: 285px;
+        height: 55px;
+        align-items: center;
+    }
+
+
+    .about__description    {
+        display: none;
+    }
+
+
+}

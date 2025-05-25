@@ -23,23 +23,23 @@
 // let result = f % g;
 // alert(result);
 
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
+// let num = 1;
+// num += 5;
+// num -= 3;
+// num *= 7;
+// num /= 3;
+// num++;
+// num--;
+// alert(num);
 
-let age = Number(prompt('Сколько вам лет?'));
-alert(`Вам ${age} лет`);
+// let age = Number(prompt('Сколько вам лет?'));
+// alert(`Вам ${age} лет`);
 
-const user = {
-    name: 'kosha',
-    age: 3,
-    isAdmin: true
-};
+// const user = {
+//     name: 'kosha',
+//     age: 3,
+//     isAdmin: true
+// };
 
-let name = String(prompt('Как Вас зовут?'));
-alert(`Привет, ${name}!`);
+// let name = String(prompt('Как Вас зовут?'));
+// alert(`Привет, ${name}!`);
