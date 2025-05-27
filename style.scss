@@ -1,5 +1,6 @@
 @import 'vars';
 
+
 *   {
     margin: 0;
     padding: 0;
@@ -33,12 +34,13 @@ button  {
     background-color: #E1FF8F;
 }
 
-  .intro    {
+.intro    {
     padding-top: 196px;
     padding-bottom: 156px;
 }
 
-  .title  {
+.title  {
+    width: 768px;
     color: $color-text;
     font-size: 64px;
     font-weight: 700;
@@ -255,12 +257,7 @@ button  {
     }
 }
 
-
 @import 'tablet';
 @import 'mobile';
-
-
-
-
 
 
