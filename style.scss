@@ -1,0 +1,263 @@
+@import 'vars';
+
+
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+body  {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a   {
+    text-decoration: none;
+}
+  
+button  {
+    transition: all 0.5s;
+}
+
+.center    {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.page-1    {
+    background: url(img/star-1.svg) top 94px left 63px no-repeat,
+                url(img/star-2.svg) top 69px left 156px no-repeat,
+                url(img/star-3.svg) top 538px left 948px no-repeat,
+                url(img/star-4.svg) top 568px left 1013px no-repeat,
+                url(img/star-big.svg) top -335px left 929px no-repeat;
+    background-color: #E1FF8F;
+}
+
+.intro    {
+    padding-top: 196px;
+    padding-bottom: 156px;
+}
+
+.title  {
+    width: 768px;
+    color: $color-text;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: left;
+}
+
+.description  {
+    color: $color-text;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    padding-top: 24px;
+}
+
+.intro-btn  {
+    margin-top: 48px;
+    font: inherit;
+    box-sizing: border-box;
+    border: 1px solid $color-text;
+    border-radius: 60px;
+    background: $color-text;
+    width: 247px;
+    height: 66px;
+    color: $color-text-page23;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    text-align: center;
+    &:hover    {
+        background: #FFFFFF;
+        color: $color-text;
+    }
+}
+
+.lane   {
+    height: 90px;
+    background: url(img/row.svg);
+}
+
+.page-2  {
+    background: url(img/star-about-big.svg) top 77px left 1050px no-repeat,
+                url(img/star-about-1.svg) top 770px left 29px no-repeat,
+                url(img/star-about-2.svg) top 822px left 40px no-repeat;
+    background-color: $color-text;
+}
+
+.about  {
+    padding-top: 94px;
+    &__title  {
+        color: $color-text-page23;
+    }
+    &__description  {
+        color: $color-text-page23;
+    }
+    &-game  {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 72px;
+        column-gap: 32px;
+    }
+}
+
+.card   {
+    &__link  {
+        background-color: #FFFFFF;
+    }
+    &__img  {
+        background-color: #FFFFFF;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        width: 378px;
+    }
+    &__info  {
+        height: 159px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        background-color: #FFFFFF;
+        padding-left: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &_middle  {
+            height: 198px;
+        }
+        &_big  {
+            height: 237px;
+        }
+    }
+    &__number  {
+        width: 108px;
+        height: 36px;
+        border-radius: 52.58px;
+        background: #F7F7F7;
+        color: $color-text;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 10px;
+    }
+    &__name  {
+        color: $color-text;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        padding-top: 16px;
+    }
+    &-lower  {
+        display: flex;
+        gap: 32px;
+        align-items: flex-end;
+    }
+}
+
+.page-3  {
+    background: url(img/star-min-1.svg) top 93px left 1327px no-repeat,
+                url(img/star-min-2.svg) top 126px left 1370px no-repeat,
+                url(img/star-min-3.svg) top 3366px left 1369px no-repeat,
+                url(img/star-min-4.svg) top 3414px left 1299px no-repeat;
+    background-color: $color-text;
+    padding-bottom: 144px;
+    &__title  {
+        color: $color-text-page23;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        padding-top: 46px;
+        padding-bottom: 72px;
+    }
+}
+
+.mini  {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    &-card  {
+        display: flex;
+        flex-direction: row;
+        &__info  {
+            width: 600px;
+            height: 500px;
+            background-color: #FFFFFF;
+            padding-left: 48px;
+            padding-top: 48px;
+            background-color: #FFFFFF;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            &_reverce  {
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+        }
+        &__name  {
+            color: $color-text;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            text-align: left;
+            padding-bottom: 24px;
+        }
+        &__description  {
+            color: $color-text;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+            padding-bottom: 36px;
+        }
+        &__btn  {
+            width: 247px;
+            height: 66px;
+            border-radius: 60px;
+            background: $color-text;
+            font: inherit;
+            color: $color-text-page23;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            text-align: center;
+            &:hover    {
+                background: #FFFFFF;
+                color: $color-text;
+            }
+        }
+        &__img  {
+            background-color: #FFFFFF;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            &_reverce  {
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+    }
+}
+
+.footer  {
+    height: 150px;
+    background: #BDED35;
+    &__title  {
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: center;
+        padding-top: 61px;
+    }
+}
+
+@import 'tablet';
+@import 'mobile';
+
+
