@@ -87,6 +87,7 @@ button  {
                 url(img/star-about-1.svg) top 770px left 29px no-repeat,
                 url(img/star-about-2.svg) top 822px left 40px no-repeat;
     background-color: $color-text;
+    padding-bottom: 50px;
 }
 
 .about  {
@@ -107,6 +108,11 @@ button  {
 }
 
 .card   {
+    &:hover {
+        transform: scale(1.10);
+        animation: 1.0s ease;
+    }
+
     &__link  {
         background-color: #FFFFFF;
     }
@@ -184,7 +190,6 @@ button  {
         flex-direction: row;
         &__info  {
             width: 600px;
-            height: 500px;
             background-color: #FFFFFF;
             padding-left: 48px;
             padding-top: 48px;
