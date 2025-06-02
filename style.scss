@@ -26,18 +26,19 @@ button  {
 }
 
 .page-1    {
-    background: url(img/star-1.svg) top 94px left 63px no-repeat,
-                url(img/star-2.svg) top 69px left 156px no-repeat,
-                url(img/star-3.svg) top 538px left 948px no-repeat,
-                url(img/star-4.svg) top 568px left 1013px no-repeat,
-                url(img/star-big.svg) top -335px left 929px no-repeat;
     background-color: #E1FF8F;
 }
 
 .intro    {
+    background: url(img/star-1.svg) top 94px left -30px no-repeat,
+                url(img/star-2.svg) top 69px left 36px no-repeat,
+                url(img/star-3.svg) top 538px left 830px no-repeat,
+                url(img/star-4.svg) top 568px left 900px no-repeat,
+                url(img/star-big.svg) top -355px left 700px no-repeat;
     padding-top: 196px;
     padding-bottom: 156px;
 }
+
 
 .title  {
     width: 768px;
@@ -83,9 +84,6 @@ button  {
 }
 
 .page-2  {
-    background: url(img/star-about-big.svg) top 77px left 1050px no-repeat,
-                url(img/star-about-1.svg) top 770px left 29px no-repeat,
-                url(img/star-about-2.svg) top 822px left 40px no-repeat;
     background-color: $color-text;
     padding-bottom: 50px;
 }
@@ -94,6 +92,9 @@ button  {
     padding-top: 94px;
     &__title  {
         color: $color-text-page23;
+        background: url(img/star-about-big.svg) top -77px left 500px no-repeat,
+                url(img/star-about-1.svg) top 770px left 29px no-repeat,
+                url(img/star-about-2.svg) top 822px left 40px no-repeat;
     }
     &__description  {
         color: $color-text-page23;
