@@ -1,4 +1,8 @@
-@media (max-width: 768px) {   
+@media (min-width: 375px) and (max-width: 767px) {   
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
     .page-1    {
         padding-left: 57px;
@@ -27,6 +31,16 @@
         height: 55px;
         align-items: center;
         margin-top: 36px;
+        &:hover {
+            background: $color-text;
+            color: $color-text-page23;
+        }
+    }
+    .intro-link   {
+        display: none;
+    }
+    .intro-link-adapt   {
+        display: inline-block;
     }
 
     .lane   {
@@ -54,6 +68,10 @@
             width: 285px;
             height: 55px;
             margin-left: 29px;
+            &:hover {
+                background: $color-text;
+                color: $color-text-page23;
+            }
         }
         &__description  {
             font-size: 16px;

@@ -30,13 +30,13 @@ button  {
 }
 
 .intro    {
-    background: url(img/star-1.svg) top 94px left -30px no-repeat,
-                url(img/star-2.svg) top 69px left 36px no-repeat,
-                url(img/star-3.svg) top 538px left 830px no-repeat,
-                url(img/star-4.svg) top 568px left 900px no-repeat,
-                url(img/star-big.svg) top -355px left 700px no-repeat;
     padding-top: 196px;
     padding-bottom: 156px;
+        background: url(img/star-1.svg) top 10vh left 5vw no-repeat fixed,
+                url(img/star-2.svg) top 69px left 36px no-repeat fixed,
+                url(img/star-3.svg) top 538px left 830px no-repeat fixed,
+                url(img/star-4.svg) top 568px left 900px no-repeat fixed,
+                url(img/star-big.svg) top -355px left 700px no-repeat fixed;
 }
 
 
@@ -76,6 +76,9 @@ button  {
         background: #FFFFFF;
         color: $color-text;
     }
+}
+.intro-link-adapt   {
+    display: none;
 }
 
 .lane   {
@@ -263,7 +266,7 @@ button  {
     }
 }
 
-@import 'tablet';
 @import 'mobile';
+@import 'tablet';
 
 
