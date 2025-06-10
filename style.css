@@ -28,9 +28,11 @@ button {
 }
 
 .intro {
+  background: url(img/star-1.svg) top 94px left -28px no-repeat, url(img/star-2.svg) top 69px left 36px no-repeat, url(img/star-3.svg) top 538px left 830px no-repeat, url(img/star-4.svg) top 568px left 900px no-repeat, url(img/star-big.svg) top -355px left 700px no-repeat;
   padding-top: 196px;
   padding-bottom: 156px;
-  background: url(img/star-1.svg) top 10vh left 5vw no-repeat fixed, url(img/star-2.svg) top 69px left 36px no-repeat fixed, url(img/star-3.svg) top 538px left 830px no-repeat fixed, url(img/star-4.svg) top 568px left 900px no-repeat fixed, url(img/star-big.svg) top -355px left 700px no-repeat fixed;
+  position: relative;
+  z-index: 100px;
 }
 
 .title {
@@ -93,16 +95,18 @@ button {
   }
 }
 .page-2 {
-  background-color: #202027;
   padding-bottom: 50px;
+  background-color: #202027;
 }
 
 .about {
+  position: relative;
+  z-index: 0px;
   padding-top: 94px;
+  background: url(img/star-about-big.svg) top 77px left 814px no-repeat, url(img/star-about-1.svg) top 770px left 29px no-repeat, url(img/star-about-2.svg) top 822px left 40px no-repeat;
 }
 .about__title {
   color: #FFFFFF;
-  background: url(img/star-about-big.svg) top -77px left 500px no-repeat, url(img/star-about-1.svg) top 770px left 29px no-repeat, url(img/star-about-2.svg) top 822px left 40px no-repeat;
 }
 .about__description {
   color: #FFFFFF;
@@ -170,7 +174,6 @@ button {
 }
 
 .page-3 {
-  background: url(img/star-min-1.svg) top 93px left 1327px no-repeat, url(img/star-min-2.svg) top 126px left 1370px no-repeat, url(img/star-min-3.svg) top 3366px left 1369px no-repeat, url(img/star-min-4.svg) top 3414px left 1299px no-repeat;
   background-color: #202027;
   padding-bottom: 144px;
 }
@@ -182,6 +185,7 @@ button {
   text-align: left;
   padding-top: 46px;
   padding-bottom: 72px;
+  background: url(img/star-min-1.svg) top 93px left 1327px no-repeat, url(img/star-min-2.svg) top 126px left 1370px no-repeat, url(img/star-min-3.svg) top 3366px left 1369px no-repeat, url(img/star-min-4.svg) top 3414px left 1299px no-repeat;
 }
 
 .mini {
@@ -273,12 +277,15 @@ button {
   .page-1 {
     padding-left: 57px;
     padding-right: 57px;
-    background: none;
-    overflow-x: hidden;
+  }
+  .page-1_mobile {
+    background: url(img/star-mobile-1.svg) top 97px left 37px no-repeat, url(img/star-mobile-2.svg) top 64px left 91px no-repeat, url(img/star-mobile-3.svg) top -85px left 250px no-repeat, url(img/star-mobile-4.svg) top 557px left 272px no-repeat, url(img/star-mobile-5.svg) top 580px left 303px no-repeat;
+    background-color: #E1FF8F;
   }
   .intro {
     padding-top: 147px;
     padding-bottom: 131px;
+    background: none;
   }
   .title {
     font-size: 40px;
@@ -395,10 +402,6 @@ button {
     text-align: start;
     padding-left: 93px;
   }
-  .page-1_mobile {
-    background: url(img/star-mobile-1.svg) top 97px left 37px no-repeat, url(img/star-mobile-2.svg) top 64px left 91px no-repeat, url(img/star-mobile-3.svg) top -95px left 300px no-repeat;
-    background-color: #E1FF8F;
-  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .center {
@@ -431,7 +434,7 @@ button {
     padding-top: 120px;
     padding-bottom: 80px;
     background-size: 30px;
-    background-position: top 50px left -15px, top 30px left 20px, bottom 200px right 100px, bottom 230px right 170px, top -200px right 100px;
+    background-position: top 50px left -15px, top 30px left 20px, bottom 100px right 50px, bottom 50px right 20px;
   }
   .page-2 {
     display: none;

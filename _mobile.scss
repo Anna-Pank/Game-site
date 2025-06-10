@@ -7,12 +7,19 @@
     .page-1    {
         padding-left: 57px;
         padding-right: 57px;
-        background: none;
-        overflow-x: hidden;
+    }
+     .page-1_mobile  {
+        background: url(img/star-mobile-1.svg) top 97px left 37px no-repeat,
+                    url(img/star-mobile-2.svg) top 64px left 91px no-repeat,
+                    url(img/star-mobile-3.svg) top -85px left 250px no-repeat,
+                    url(img/star-mobile-4.svg) top 557px left 272px no-repeat,
+                    url(img/star-mobile-5.svg) top 580px left 303px no-repeat;
+        background-color: #E1FF8F;
     }
     .intro    {
         padding-top: 147px;
         padding-bottom: 131px;
+         background: none;
     }
     .title  {
         font-size: 40px;
@@ -132,11 +139,4 @@
             padding-left: 93px;
         }
     }
-    .page-1_mobile  {
-        background: url(img/star-mobile-1.svg) top 97px left 37px no-repeat,
-                    url(img/star-mobile-2.svg) top 64px left 91px no-repeat,
-                    url(img/star-mobile-3.svg) top -95px left 300px no-repeat;
-        background-color: #E1FF8F;
-    }
-   
 }

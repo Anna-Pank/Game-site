@@ -31,13 +31,15 @@ button  {
 }
 
 .intro    {
+    background: url(img/star-1.svg) top 94px left -28px no-repeat,
+                url(img/star-2.svg) top 69px left 36px no-repeat,
+                url(img/star-3.svg) top 538px left 830px no-repeat,
+                url(img/star-4.svg) top 568px left 900px no-repeat,
+                url(img/star-big.svg) top -355px left 700px no-repeat;
     padding-top: 196px;
     padding-bottom: 156px;
-        background: url(img/star-1.svg) top 10vh left 5vw no-repeat fixed,
-                url(img/star-2.svg) top 69px left 36px no-repeat fixed,
-                url(img/star-3.svg) top 538px left 830px no-repeat fixed,
-                url(img/star-4.svg) top 568px left 900px no-repeat fixed,
-                url(img/star-big.svg) top -355px left 700px no-repeat fixed;
+    position: relative;
+    z-index: 100px;
 }
 
 
@@ -96,17 +98,19 @@ button  {
 }
 
 .page-2  {
-    background-color: $color-text;
     padding-bottom: 50px;
+    background-color: $color-text;
 }
 
 .about  {
+    position: relative;
+    z-index: 0px;
     padding-top: 94px;
-    &__title  {
-        color: $color-text-page23;
-        background: url(img/star-about-big.svg) top -77px left 500px no-repeat,
+    background: url(img/star-about-big.svg) top 77px left 814px no-repeat,
                 url(img/star-about-1.svg) top 770px left 29px no-repeat,
                 url(img/star-about-2.svg) top 822px left 40px no-repeat;
+    &__title  {
+        color: $color-text-page23;
     }
     &__description  {
         color: $color-text-page23;
@@ -177,10 +181,6 @@ button  {
 }
 
 .page-3  {
-    background: url(img/star-min-1.svg) top 93px left 1327px no-repeat,
-                url(img/star-min-2.svg) top 126px left 1370px no-repeat,
-                url(img/star-min-3.svg) top 3366px left 1369px no-repeat,
-                url(img/star-min-4.svg) top 3414px left 1299px no-repeat;
     background-color: $color-text;
     padding-bottom: 144px;
     &__title  {
@@ -191,6 +191,10 @@ button  {
         text-align: left;
         padding-top: 46px;
         padding-bottom: 72px;
+        background: url(img/star-min-1.svg) top 93px left 1327px no-repeat,
+                url(img/star-min-2.svg) top 126px left 1370px no-repeat,
+                url(img/star-min-3.svg) top 3366px left 1369px no-repeat,
+                url(img/star-min-4.svg) top 3414px left 1299px no-repeat;
     }
 }
 
