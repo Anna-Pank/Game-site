@@ -25,12 +25,14 @@
         line-height: 20px;
         text-align: center;
         width: 262px;
+        width: 296px;
     }
     .intro-btn  {
         width: 285px;
         height: 55px;
         align-items: center;
         margin-top: 36px;
+        font-size: 16px;
         &:hover {
             background: $color-text;
             color: $color-text-page23;
@@ -68,6 +70,7 @@
             width: 285px;
             height: 55px;
             margin-left: 29px;
+            font-size: 16px;
             &:hover {
                 background: $color-text;
                 color: $color-text-page23;
@@ -83,6 +86,7 @@
             line-height: 39px;
             margin-left: 29px;
             margin-top: 29px;
+            padding-bottom: 16px;
         }
         &__info    {
             width: 343px;
