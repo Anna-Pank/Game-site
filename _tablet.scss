@@ -1,16 +1,107 @@
-// @media (max-width: 1024px),
-//         (min-width: 768px)  {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .center {   
+        padding-left: calc(50% - 360px);
+        padding-right: calc(50% - 360px);
+    }
+    button  {   
+        transition: none;
+    }
 
-//     // .center    {
-//     //     padding-left: calc(50% - 512px);
-//     //     padding-right: calc(50% - 512px);
-//     // }
+    .title {    
+        width: 100%;
+        font-size: 48px;
+        line-height: 60px;
+    }
 
-//     // .page-1    {
-//     //     padding-left: 57px;
-//     //     padding-right: 57px;
-//     //     background: none;
-//     //     overflow-x: hidden;
-//     // }
+    .description {
+        font-size: 20px;
+        line-height: 28px;
+    }
 
-// }
+    .intro-btn:hover {  
+        background: $color-text;
+        color: $color-text-page23;
+    }
+
+    .intro-link   { 
+        display: none;
+    }
+
+    .intro-link-adapt   {   
+        display: inline-block;
+    }
+
+    .intro {
+        padding-top: 120px;
+        padding-bottom: 80px;
+        background-size: 30px;
+        background-position: top 50px left -15px, top 30px left 20px,
+                            bottom 100px right 50px, bottom 50px right 20px;
+    }
+
+    .page-2    {
+            display: none;
+    }
+
+    .page-3__title  {
+        font-size: 46px;
+        line-height: 49px;
+        text-align: left;
+        padding-bottom: 48px;
+    }
+    .mini-card  {
+        flex-direction: column-reverse;
+        &__btn  {
+            margin-left: 29px;
+            &:hover {
+                background: $color-text;
+                color: $color-text-page23;
+            }
+        }
+        &__description  {
+            margin-left: 29px;
+        }
+        &__name    {
+            margin-left: 29px;
+            margin-top: 29px;
+        }
+        &__info    {
+            width: 720px;
+            height: 310px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 30px;
+            padding-left: 0;
+            padding-top: 0px;
+        }
+        &__img  {
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 0;
+        }
+        &_reverce   {
+            display: flex;
+            flex-direction: column;
+        }
+        &__img_reverce  {
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 30px;
+        }
+        &__info_reverce {
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 0;
+            height: 370px;
+        }
+        &__info_big    {
+            height: 425px;
+        }
+        &__info_super-big    {
+            height: 430px;
+        }
+    }
+
+    .footer {
+        height: 100px;
+        &__title {
+            padding-top: 35px;
+        }
+    }
+}
