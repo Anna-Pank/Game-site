@@ -41,7 +41,7 @@ console.log(matrix);
 // Задача №5
 
 const att = [1, 1, 1];
-arr.push(2, 2, 2);
+att.push(2, 2, 2);
 console.log(att);
 
 // Задача №6
