@@ -30,7 +30,6 @@ function rockPaperScissors() {
     Результат: ${result}
   `);
 
-    // Предлагаем сыграть еще раз
     if (confirm("Хотите сыграть еще раз?")) {
         rockPaperScissors();
     } else {
