@@ -21,6 +21,11 @@
     <main>
         <section class="page-1 center page-1_mobile">
             <div class="intro">
+                <img src="img/star-big.svg" class="star star-big" alt="">
+                <img src="img/star-1.svg" class="star star-1" alt="">
+                <img src="img/star-2.svg" class="star star-2" alt="">
+                <img src="img/star-3.svg" class="star star-3" alt="">
+                <img src="img/star-4.svg" class="star star-4" alt="">
                 <h1 class="title" id="text">Добро пожаловать<br>на мой сайт мини-игр</h1>
                 <p class="description" id="heading">Тебе предстоит пройти несколько увлекательных игр. Если
                     готов,
@@ -31,9 +36,17 @@
                 <a class="intro-link-adapt" href="#mini-game"><button class="intro-btn">Поехали!</button></a>
             </div>
         </section>
-        <div class="lane"></div>
+        <div class="lane-container">
+            <div class="lane">
+                <img src="img/row.svg" alt="pattern">
+                <img src="img/row.svg" alt="pattern">
+            </div>
+        </div>
         <section class="page-2 center">
             <section class="about">
+                <img src="img/star-about-big.svg" class="star-about star-about-big" alt="">
+                <img src="img/star-about-1.svg" class="star-about star-about-small-1" alt="">
+                <img src="img/star-about-2.svg" class="star-about star-about-small-2" alt="">
                 <h2 id="about-game" class="title about__title">Об играх</h2>
                 <p class="description about__description">В моей коллекции представлено 6 игр на разные темы. <br>Игры
                     несложные — в них может поиграть каждый. <br>Все игры доступны для пользования.</p>
@@ -146,7 +159,12 @@
                         <h3 class="mini-card__name">Генератор <br>случайных <br>цветов</h3>
                         <p class="mini-card__description">Игра, в которой при клике на кнопку<br> фон страницы меняется
                             на случайный.</p>
-                        <button class="mini-card__btn">Играть!</button>
+                        <button class="mini-card__btn" id="playBtn">Играть!</button>
+                        <button class="mini-card__btn" id="colorBtn" style="display: none; margin-top: 10px;">Изменить
+                            цвет</button>
+                        <button class="mini-card__btn" id="resetBtn"
+                            style="display: none; margin-top: 10px;">Отменить</button>
+                        <div id="colorCode" style="display: none; margin-top: 10px; font-family: monospace;"></div>
                     </div>
                 </article>
             </section>
@@ -160,6 +178,7 @@
     <script src="js/game-3.js"></script>
     <script src="js/game-4.js"></script>
     <script src="js/game-5.js"></script>
+    <script src="js/game-6.js"></script>
 </body>
 </body>
 

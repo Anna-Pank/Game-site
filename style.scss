@@ -28,20 +28,42 @@ button  {
 
 .page-1    {
     background-color: #E1FF8F;
+    position: relative;
+    overflow: hidden;
 }
 
-.intro    {
-    background: url(img/star-1.svg) top 94px left -28px no-repeat,
-                url(img/star-2.svg) top 69px left 36px no-repeat,
-                url(img/star-3.svg) top 538px left 830px no-repeat,
-                url(img/star-4.svg) top 568px left 900px no-repeat,
-                url(img/star-big.svg) top -355px left 700px no-repeat;
+.intro {
     padding-top: 196px;
     padding-bottom: 156px;
     position: relative;
-    z-index: 100;
 }
 
+.star {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    &-big   {
+        top: -335px;
+        left: 760px;
+        height: auto;
+    }
+    &-1     {
+        top: 94px;
+        left: -58px;
+    }
+    &-2     {
+        top: 69px;
+        left: 36px;
+    }
+    &-3     {
+        top: 538px;
+        left: 830px;
+    }
+    &-4     {
+     top: 568px;
+        left: 900px;
+    }
+}
 
 .title  {
     width: 768px;
@@ -85,16 +107,26 @@ button  {
     display: none;
 }
 
-.lane   {
-    height: 90px;
-    background: url(img/row.svg);
+.lane-container {
+    width: 100%;
     overflow: hidden;
-    white-space: nowrap; 
-    animation: scroll 10s linear infinite; 
 }
+
+.lane {
+    height: 90px;
+    display: flex;
+    animation: scroll 10s linear infinite;
+    width: 200%; 
+}
+
+.lane img {
+    height: 100%;
+    width: auto;
+}
+
 @keyframes scroll {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    100% { transform: translateX(-50%); } 
 }
 
 .page-2  {
@@ -104,11 +136,8 @@ button  {
 
 .about  {
     position: relative;
-    z-index: 10;
+    z-index: 1;
     padding-top: 94px;
-    background: url(img/star-about-big.svg) top 77px left 814px no-repeat,
-                url(img/star-about-1.svg) top 770px left 29px no-repeat,
-                url(img/star-about-2.svg) top 822px left 40px no-repeat;
     &__title  {
         color: $color-text-page23;
     }
@@ -120,9 +149,37 @@ button  {
         flex-wrap: wrap;
         flex-direction: row;
         margin-top: 72px;
-        column-gap: 32px;
+        column-gap: 32px; 
     }
 }
+
+.star-about {
+    position: absolute;
+    pointer-events: none; /* Звезды позади контента */
+}
+
+/* Большая звезда */
+.star-about-big {
+    top: 77px;
+    right: -150px; /* Вместо left используем right для выравнивания по правому краю */
+    width: 500px; /* Укажите реальную ширину */
+    height: auto;
+    z-index: -1;
+}
+
+/* Маленькие звезды */
+.star-about-small-1 {
+    top: 770px;
+    left: 29px;
+    width: 50px; /* Укажите реальную ширину */
+}
+
+.star-about-small-2 {
+    top: 822px;
+    left: 40px;
+    width: 40px; /* Укажите реальную ширину */
+}
+
 
 .card   {
     &:hover {
