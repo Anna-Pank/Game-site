@@ -1,10 +1,22 @@
 @media (min-width: 768px) and (max-width: 1024px) {
+    
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
     .center {   
         padding-left: calc(50% - 360px);
         padding-right: calc(50% - 360px);
+        max-width: 100%; 
+        box-sizing: border-box;
     }
     button  {   
         transition: none;
+    }
+
+    .star {
+        display: none;
     }
 
     .title {    
@@ -49,8 +61,15 @@
         text-align: left;
         padding-bottom: 48px;
     }
+    
+    .star-min {
+        display: none;
+    }
+
     .mini-card  {
         flex-direction: column-reverse;
+        max-width: 100%;
+        width: 100%;
         &__btn  {
             margin-left: 29px;
             &:hover {
@@ -66,7 +85,9 @@
             margin-top: 29px;
         }
         &__info    {
-            width: 720px;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
             height: 310px;
             border-top-left-radius: 0;
             border-bottom-right-radius: 30px;

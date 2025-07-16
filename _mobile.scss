@@ -8,6 +8,9 @@
         padding-left: 57px;
         padding-right: 57px;
     }
+    .star {
+        display: none;
+    }
      .page-1_mobile  {
         background: url(img/star-mobile-1.svg) top 97px left 37px no-repeat,
                     url(img/star-mobile-2.svg) top 64px left 91px no-repeat,
@@ -52,7 +55,11 @@
         display: inline-block;
     }
 
-    .lane   {
+    .lane-img {
+        display: none;
+    }
+
+    .lane-mob   {
         height: 51.34px;
         background: url(img/row-mobile.svg);
     }
@@ -65,6 +72,9 @@
         padding-left: 16px;
     }
 
+    .star-min {
+        display: none;
+    }
     .page-3__title  {
         font-size: 40px;
         line-height: 49px;
