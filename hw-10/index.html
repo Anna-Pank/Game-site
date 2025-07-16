@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Этот текст можно скрыть или показать</h1>
+    <button id="toggleButton">Скрыть</button>
+
+    <p id="text">Этот текст изменит цвет при нажатии на кнопку.</p>
+    <button id="colorButton">Изменить цвет</button>
+
+    <h1 id="mainHeading">Этот текст будет изменён</h1>
+    <button id="changeTextButton">Изменить текст</button>
+
+    <p class="description">Первый элемент описания</p>
+    <p class="description">Второй элемент описания</p>
+    <p class="description">Третий элемент описания</p>
+
+    <p class="descrip">Первое описание товара</p>
+    <p class="other-class">Обычный текст без класса description</p>
+    <p class="descrip">Второе описание услуги</p>
+    <p>Просто абзац без классов</p>
+    <p class="descrip">Третье описание характеристики</p>
+    <p class="other-class">Ещё один элемент с другим классом</p>
+
+    <button id="addButton">Добавить элемент</button>
+
+    <p>Этот абзац не будет удаляться</p>
+    <p class="deletion">Этот абзац будет удалён первым</p>
+    <p class="deletion">Этот абзац будет удалён вторым</p>
+    <p>Этот абзац тоже не будет удаляться</p>
+    <button id="deleteButton">Удалить элемент</button>
+
+
+    <script>
+        const title = document.querySelector('#title');
+        const button = document.querySelector('#toggleButton');
+
+        button.addEventListener('click', function () {
+            if (title.classList.contains('hidden')) {
+                title.classList.remove('hidden');
+                button.textContent = 'Скрыть';
+            } else {
+                title.classList.add('hidden');
+                button.textContent = 'Показать';
+            }
+        });
+
+        const textElement = document.querySelector('#text');
+        const colorButton = document.querySelector('#colorButton');
+
+        colorButton.addEventListener('click', function () {
+            textElement.style.color = 'blue';
+        });
+
+        const heading = document.querySelector('#mainHeading');
+        const changeButton = document.querySelector('#changeTextButton');
+
+        changeButton.addEventListener('click', function () {
+            heading.textContent = 'Привет, мир!';
+        });
+
+        const descriptionElements = document.querySelectorAll('.description');
+
+        descriptionElements.forEach(element => {
+            element.textContent = 'Измененный текст';
+        });
+
+
+        const descElements = document.querySelectorAll('.descrip');
+
+        descElements.forEach(element => {
+            element.textContent = 'Новый текст';
+        });
+
+        const addButton = document.getElementById('addButton');
+
+        addButton.addEventListener('click', function () {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+
+            document.body.appendChild(newParagraph);
+        });
+
+        const deleteButton = document.getElementById('deleteButton');
+
+        deleteButton.addEventListener('click', function () {
+            const firstDeletable = document.querySelector('p.deletion');
+
+            if (firstDeletable) {
+                firstDeletable.remove();
+            }
+        });
+    </script>
+</body>
+
+</html>
