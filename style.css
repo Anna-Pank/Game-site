@@ -439,6 +439,12 @@ button {
     text-align: left;
     padding-bottom: 48px;
   }
+  .mini {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+  }
   .mini-card {
     flex-direction: column-reverse;
   }
@@ -504,7 +510,7 @@ button {
     padding-top: 40px;
     font-size: 16px;
     line-height: 20px;
-    text-align: start;
+    text-align: center;
     padding-left: 93px;
   }
 }
