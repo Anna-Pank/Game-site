@@ -396,12 +396,10 @@ button {
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    width: 262px;
     width: 296px;
   }
   .intro-btn {
     width: 285px;
-    height: 55px;
     align-items: center;
     margin-top: 36px;
     font-size: 16px;
@@ -450,9 +448,9 @@ button {
   }
   .mini-card__btn {
     width: 285px;
-    height: 55px;
     margin-left: 29px;
     font-size: 16px;
+    margin-bottom: 32px;
   }
   .mini-card__btn:hover {
     background: #202027;
@@ -472,7 +470,6 @@ button {
   }
   .mini-card__info {
     width: 343px;
-    height: 244px;
     border-top-left-radius: 0;
     border-bottom-right-radius: 30px;
     padding-left: 0;
@@ -480,7 +477,6 @@ button {
   }
   .mini-card__img {
     width: 343px;
-    height: 285px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 0;
   }
@@ -495,13 +491,6 @@ button {
   .mini-card__info_reverce {
     border-bottom-left-radius: 30px;
     border-top-right-radius: 0;
-    height: 283px;
-  }
-  .mini-card__info_big {
-    height: 322px;
-  }
-  .mini-card__info_super-big {
-    height: 342px;
   }
   .footer {
     height: 100px;
