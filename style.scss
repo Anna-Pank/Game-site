@@ -119,7 +119,7 @@ button  {
     width: 200%; 
 }
 
-.lane img {
+.lane-img {
     height: 100%;
     width: auto;
 }
@@ -132,14 +132,18 @@ button  {
 .page-2  {
     padding-bottom: 50px;
     background-color: $color-text;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .about  {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     padding-top: 94px;
     &__title  {
         color: $color-text-page23;
+        position: relative; 
+        z-index: 3;
     }
     &__description  {
         color: $color-text-page23;
@@ -150,41 +154,37 @@ button  {
         flex-direction: row;
         margin-top: 72px;
         column-gap: 32px; 
+        position: relative;
+        z-index: 4;
     }
 }
 
 .star-about {
     position: absolute;
-    pointer-events: none; /* Звезды позади контента */
+    pointer-events: none; 
+    &-big { 
+        top: 77px;
+        right: -250px; 
+        height: auto;
+        z-index: 1;
+    }
+    &-small-1 {
+        top: 780px;
+        left: -120px; 
+    }
+    &-small-2 {
+        top: 832px;
+        left: -90px;
+    }
 }
-
-/* Большая звезда */
-.star-about-big {
-    top: 77px;
-    right: -150px; /* Вместо left используем right для выравнивания по правому краю */
-    width: 500px; /* Укажите реальную ширину */
-    height: auto;
-    z-index: -1;
-}
-
-/* Маленькие звезды */
-.star-about-small-1 {
-    top: 770px;
-    left: 29px;
-    width: 50px; /* Укажите реальную ширину */
-}
-
-.star-about-small-2 {
-    top: 822px;
-    left: 40px;
-    width: 40px; /* Укажите реальную ширину */
-}
-
 
 .card   {
+    position: relative;
+    z-index: 2;
     &:hover {
         transform: scale(1.10);
         animation: 1.0s ease;
+        z-index: 5;
     }
 
     &__link  {
@@ -248,12 +248,37 @@ button  {
         text-align: left;
         padding-top: 46px;
         padding-bottom: 72px;
-        position: relative;
-        z-index: 10;
-        background: url(img/star-min-1.svg) top 93px left 1327px no-repeat,
-                url(img/star-min-2.svg) top 126px left 1370px no-repeat,
-                url(img/star-min-3.svg) top 3366px left 1369px no-repeat,
-                url(img/star-min-4.svg) top 3414px left 1299px no-repeat;
+    }
+}
+.stars-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.star-min {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    &-1 {
+        top: 90px;
+        right: 10px;
+    }
+    &-2 {
+        top: 130px;
+        right: -70px;
+    }
+    &-3 {
+        top: 3366px;
+        right: -70px;
+    }
+    &-4 {
+        top: 3414px;
+        right: 25px;
     }
 }
 
