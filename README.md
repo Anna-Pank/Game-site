@@ -5,6 +5,10 @@
 [![Last Commit](https://img.shields.io/github/last-commit/Anna-Pank/Game-site)](https://github.com/Anna-Pank/Game-site/commits/main)
 [![GitHub License](https://img.shields.io/github/license/Anna-Pank/Game-site)](https://github.com/Anna-Pank/Game-site/blob/main/LICENSE)
 
+## 🌐 Живая демонстрация
+
+[![Website](https://img.shields.io/badge/🌐_Live_Demo-0088CC?style=for-the-badge&logo=github&logoColor=white)](https://anna-pank.github.io/Game-site/)
+
 ## 🕹️ Доступные игры
 1. **Камни-ножницы-бумага** - классическая игра с ИИ
 2. **Простая арифметика** - ретро-игра с подсчётом очков
